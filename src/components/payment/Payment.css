@@ -1,0 +1,168 @@
+/* Center align text inside App */
+.App {
+  text-align: center;
+}
+
+/* Header styles */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Links */
+.App-link {
+  color: #61dafb;
+}
+
+/* Animation for rotating logo */
+@keyframes App-logo-spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+/* Push ALL content further down to avoid navbar overlap */
+body {
+  padding-bottom: 20px; /* More space added */
+}
+
+/* Apply spacing to all main sections */
+.container, .main-content {
+  margin-top: 40px; 
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Button hover effect */
+button {
+  transition: transform 0.2s ease-in-out, background-color 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #007bff;
+  color: white;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 400px; /* You can adjust the size */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+/* Smooth fade-in effect for all pages */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  body {
+      padding-top: 10px; /* Space for mobile */
+  }
+
+  /* Make header text smaller on mobile */
+  .App-header {
+      font-size: calc(12px + 2vmin);
+  }
+
+  /* Reduce margin in container for smaller screens */
+  .container, .main-content {
+      margin-top: 20px;
+  }
+
+  /* Stack navbar items vertically */
+  .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav-link {
+      padding: 10px 10px;
+      font-size: 16px;
+  }
+
+  /* Adjust button size for mobile */
+  button {
+      font-size: 14px;
+      padding: 12px 20px;
+  }
+}
+
+/* Tablet responsiveness (between 768px and 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container, .main-content {
+      margin-top: 30px; /* Moderate spacing for tablets */
+  }
+
+  /* Slightly larger font on tablets */
+  .App-header {
+      font-size: calc(12px + 2.5vmin);
+  }
+
+  button {
+      font-size: 16px;
+      padding: 14px 24px;
+  }
+}
+
+/* Desktop responsiveness (1024px and up) */
+@media (min-width: 1024px) {
+  .container, .main-content {
+      margin-top: 40px; /* Default spacing for desktops */
+  }
+
+  .App-header {
+      font-size: calc(10px + 2vmin); /* Original font size */
+  }
+
+  button {
+      font-size: 18px;
+      padding: 16px 30px;
+  }
+
+  /* Adjust navbar for larger screens */
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .nav-links {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .nav-link {
+      padding: 15px;
+      font-size: 18px;
+  }
+}

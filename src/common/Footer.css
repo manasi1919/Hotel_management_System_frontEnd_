@@ -1,0 +1,105 @@
+/* Unique Footer Container */
+.unique-footer {
+    background-color: #343a40; /* Dark background */
+    padding: 40px 10%;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    opacity: 1; /* Ensure footer is fully visible */
+    visibility: visible; /* Ensure footer is visible */
+    position: relative; /* Ensure it doesn't get hidden behind other content */
+    animation: fadeIn 1.5s ease-in-out; /* Optional: Fade in effect */
+}
+
+/* Footer Sections */
+.unique-footer-sections {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+/* Footer Columns */
+.unique-footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+/* Footer Headings */
+.unique-footer-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffcc00; /* Highlighted heading color */
+    margin-bottom: 10px;
+}
+
+/* Footer Links */
+.unique-footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.unique-footer ul li {
+    margin-bottom: 8px;
+}
+
+.unique-footer ul li a {
+    color: rgb(15, 14, 14);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.unique-footer ul li a:hover {
+    text-decoration: underline;
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+/* Social Media Icons */
+.unique-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.unique-social-icon {
+    font-size: 2rem; /* Increased size for better visibility */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Social Icon Hover Effect */
+.unique-social-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Footer Bottom */
+.unique-footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .unique-footer-sections {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .unique-footer-column {
+        margin-bottom: 20px;
+    }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

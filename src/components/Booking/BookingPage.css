@@ -1,0 +1,135 @@
+/* BookingPage.css */
+
+/* Container for the whole BookingPage */
+.booking-page {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  /* Title of the booking page */
+  .booking-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Room details section */
+  .room-details {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .room-details h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .room-details p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .room-details p strong {
+    font-weight: bold;
+  }
+  
+  /* Reservation Form Section */
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  form label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form input:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  /* Submit Button */
+  button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Loading text */
+  .loading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #3498db;
+    margin-top: 20px;
+  }
+  
+  .room-card {
+    padding: 15px;
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .room-card h4 {
+    font-size: 1.4rem;
+    color: #333;
+  }
+  
+  .room-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .room-card button {
+    margin-top: 10px;
+    width: auto;
+  }
+  
+  .room-card button:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+  }
+  

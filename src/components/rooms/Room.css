@@ -1,0 +1,439 @@
+/* General Container Styling */
+.room-container {
+  text-align: center;
+  margin: 20px 20px 20px 20px;
+  font-family: Arial, sans-serif;
+  padding-top: 80px;
+}
+h1{
+  text-align: center;
+  text-decoration:solid;
+  color: #333;
+  font-size: 55px;
+}
+/* Heading */
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Room Info Section */
+.room-info {
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Buttons - General Styling */
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* Button Hover Effects */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Spacing Between Buttons */
+.add-btn,
+.search-btn,
+.view-btn {
+  margin-bottom: 30px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+button, input, optgroup, select, textarea {
+  margin: 2px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #343a40;
+  color: white;
+}
+
+td {
+  background-color: #f8f9fa;
+}
+
+/* Action Buttons */
+button.delete-btn {
+  background-color: #dc3545; /* Red color */
+}
+
+button.delete-btn:hover {
+  background-color: #a71d2a; /* Darker red when hovered */
+}
+
+button.edit-btn {
+  background-color: #28a745; /* Green color */
+}
+
+button.edit-btn:hover {
+  background-color: #1e7e34; /* Darker green when hovered */
+}
+
+button.view-room-btn {
+  background-color: #17a2b8; /* Light blue color */
+}
+
+button.view-room-btn:hover {
+  background-color: #117a8b; /* Darker blue when hovered */
+}
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .room-container {
+      margin-top: 180px;
+      padding-top: 120px;
+  }
+
+  table {
+      font-size: 12px;
+  }
+
+  button {
+      padding: 10px 14px;
+      font-size: 12px;
+  }
+}
+
+.add-btn {
+width: 20vh;
+background-color: #28a745;
+color: white;
+padding: 12px 24px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s ease;
+margin-bottom: 30px;
+text-align: center;
+display: inline-block;
+}
+/* Navbar Fix (If You Have a Fixed Navbar) */
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #333;
+  padding: 10px;
+}
+
+/* Optional: Space for Fixed Navbar if it's covering content */
+
+
+
+
+/* Room.css */
+
+.room-list-container {
+  padding: 20px;
+}
+
+.search-bar-container {
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.room-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.room-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.room-card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.room-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.room-details {
+  margin-top: 10px;
+}
+
+.room-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.action-icon {
+  font-size: 20px;
+  color: #007BFF;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.action-icon:hover {
+  color: #0056b3;
+}
+
+/* Styling the action icons */
+.edit-icon { color: #28a745; }
+.delete-icon { color: #dc3545; }
+.view-icon { color: #17a2b8; }
+.info-icon { color: #ffc107; }
+
+.add-btn{
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #218838;
+}
+.available-icon {
+  color: green;  /* Green for available */
+  font-size: 1.5rem; /* Adjust size */
+}
+
+.unavailable-icon {
+  color: red;  /* Red for unavailable */
+  font-size: 1.5rem; /* Adjust size */
+}
+
+.back-btn {
+  position: fixed;
+  bottom: 10px; /* Position it at the bottom */
+  left: 10px; /* Position it at the left */
+  padding: 4px 8px; /* Small padding to make button compact */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px; /* Reduced font size */
+  cursor: pointer;
+  width: 70px; /* Fixed width for the button */
+  height: 30px; /* Fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-btn i {
+  margin-right: 4px; /* Adjust spacing between icon and text */
+}
+
+.back-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Container Styling */
+.room-container {
+text-align: center;
+padding: 20px;
+background-color: #f8f9fa;
+}
+
+/* Title Styling */
+.room-title {
+font-size: 30px;
+font-weight: 700;
+margin-bottom: 20px;
+color: #333;
+}
+
+/* Search Bar Styling */
+.search-bar-container {
+margin-bottom: 20px;
+}
+
+.search-bar {
+width: 350px;
+padding: 12px;
+font-size: 16px;
+border-radius: 25px;
+border: 1px solid #aaa;
+outline: none;
+text-align: center;
+transition: 0.3s;
+}
+
+/* Scrollable Container */
+.scrollable-container {
+max-height: 600px;
+overflow-y: auto;
+border-radius: 10px;
+padding: 12px;
+}
+
+/* Card Container Styling */
+.card-container {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+}
+
+/* Individual Card Styling */
+.room-card {
+background: #ffffff;
+border-radius: 12px;
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+padding: 20px;
+width: 320px;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+transition: 0.3s;
+}
+
+.room-card:hover {
+transform: scale(1.05);
+}
+
+/* Image Styling */
+.room-image {
+width: 100%;
+height: 200px;
+border-radius: 10px;
+object-fit: cover;
+margin-bottom: 10px;
+}
+
+/* Card Title Styling */
+.room-card-title {
+font-size: 22px;
+font-weight: 600;
+margin-bottom: 10px;
+color: #333;
+}
+
+/* Button Container Styling */
+.button-container {
+margin-top: 12px;
+display: flex;
+justify-content: center;
+gap: 12px;
+}
+
+/* Button Styling */
+.action-button {
+padding: 12px;
+font-size: 16px;
+cursor: pointer;
+border-radius: 8px;
+border: none;
+color: white;
+width: 45px;
+height: 45px;
+transition: 0.3s;
+}
+
+.view-button {
+background-color: #007bff;
+}
+
+.edit-button {
+background-color: #28a745;
+}
+
+.delete-button {
+background-color: #dc3545;
+}
+
+.action-button:hover {
+opacity: 0.85;
+transform: scale(1.05);
+}
+
+/* Button Group Styling */
+.button-group {
+margin-top: 25px;
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+/* Wide Button Styling */
+.wide-button {
+padding: 16px 35px;
+font-size: 18px;
+cursor: pointer;
+border-radius: 8px;
+border: none;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+font-weight: 600;
+transition: 0.3s;
+}
+
+.back-button {
+background-color: #6c757d;
+}
+
+.add-button {
+background-color: #007bff;
+}
+
+.wide-button:hover {
+opacity: 0.85;
+transform: scale(1.05);
+}
+
+/* Search Bar Focus */
+.search-bar:focus {
+border: 1px solid #007bff;
+}

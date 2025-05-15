@@ -1,0 +1,58 @@
+/* Filter.css */
+.filter-page {
+    padding: 20px;
+  }
+  
+  .hotel-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .hotel-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    width: 200px;
+  }
+  
+  .hotel-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .rooms-container {
+    margin-top: 30px;
+  }
+  
+  .room-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .hotel-amenities {
+    margin-top: 15px;
+  }
+  
+  .hotel-amenities ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .hotel-amenities li {
+    margin: 5px 0;
+  }
+  

@@ -1,18 +1,22 @@
 .App {
   text-align: center;
+  /* Increased margin to push content down */
 }
-
+ 
+/* Logo styling */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+ 
+/* Logo animation */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+ 
+/* Header styles */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,11 +27,17 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+ 
+/* Links */
 .App-link {
   color: #61dafb;
 }
-
+.id{
+  padding: 0;
+  margin: 0;
+}
+ 
+/* Animation for rotating logo */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +46,53 @@
     transform: rotate(360deg);
   }
 }
+ 
+/* ✅ Push ALL content further down to avoid navbar overlap */
+body {
+  padding-top: 0px; /* More space added */
+}
+ 
+/* ✅ Ensure root content is pushed down */
+#root {
+  margin-top: 0px;
+}
+ 
+/* ✅ Apply spacing to all main sections */
+.container, .main-content {
+  margin-top: 0px; /* Increased margin */
+  animation: fadeIn 0.8s ease-in-out;
+}
+ 
+/* ✅ Button hover effect */
+button {
+  transition: transform 0.2s ease-in-out, background-color 0.3s;
+}
+ 
+button:hover {
+  transform: scale(1.05);
+  background-color: #007bff;
+  color: white;
+}
+ 
+/* ✅ Smooth fade-in effect for all pages */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ 
+/* ✅ Mobile responsiveness */
+@media (max-width: 768px) {
+  body {
+    padding-top: 160px; /* Even more space for mobile */
+  }
+  #root {
+    margin-top: 0px;
+  }
+}
+ 

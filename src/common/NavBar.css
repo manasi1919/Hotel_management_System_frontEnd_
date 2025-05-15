@@ -1,0 +1,86 @@
+/* Navbar container */
+.navbar {
+  margin: 0;
+    padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  padding-bottom: 40px;
+  background-color: #0f0f10;  /* Background color for navbar */
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;  /* Ensure the navbar is on top of other elements */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Box shadow */
+  box-sizing: border-box;
+}
+ 
+ 
+ 
+/* Logo container */
+.logo {
+  display: flex;
+  align-items: center;  /* Align the logo and text vertically */
+}
+ 
+.logo-img {
+  width: 40px;  /* Logo size */
+  height: 40px;
+  margin-right: 10px;  /* Space between logo and text */
+}
+ 
+.navbar-brand {
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;  /* Clean look with uppercase text */
+}
+ 
+/* Navigation links container */
+.nav-links {
+  display: flex;  /* Arrange the links horizontally */
+  list-style: none;  /* Remove default list styling */
+  gap: 20px;  /* Space between links */
+  margin-left: auto;  /* Push links to the right side of the navbar */
+}
+ 
+ 
+ 
+.nav-links .nav-link {
+  text-decoration: none;  /* Remove underline */
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;  /* Add some padding for clickable area */
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;  /* Smooth transitions */
+}
+ 
+.nav-links .nav-link:hover {
+  background-color: #e2e4e7;  /* Light hover color */
+  transform: scale(1.05);  /* Slight zoom on hover */
+}
+ 
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;  /* Stack logo and links vertically on smaller screens */
+  }
+ 
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;  /* Space between links on small screens */
+    margin-top: 10px;
+  }
+ 
+  .nav-links .nav-link {
+    font-size: 16px;
+    width: 100%;  /* Links will be full width on small screens */
+    text-align: center;
+  }
+}
+ 

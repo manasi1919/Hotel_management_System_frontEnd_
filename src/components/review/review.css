@@ -1,0 +1,397 @@
+/* 🔹 Container Styling (Moves Content Down to Accommodate Navbar) */
+.review-container {
+    text-align: center;
+    margin: 140px 20px 40px 20px; /* Increased Top Margin for Navbar */
+    font-family: Arial, sans-serif;
+}
+
+/* 🔹 Heading Styling */
+.review-container h2 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* 🔹 Error Message Styling */
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+/* 🔹 No Reviews Message */
+.no-reviews {
+    font-style: italic;
+    color: #666;
+}
+
+/* 🔹 Review List Styling */
+.review-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px; /* Centered, with a width limit */
+}
+
+/* 🔹 Individual Review Item */
+.review-item {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.review-item:hover {
+    transform: scale(1.02);
+}
+
+/* 🔹 Review Header (Date + Rating) */
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+}
+
+/* 🔹 Review Date */
+.review-date {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* 🔹 Review Rating */
+.review-rating {
+    font-size: 16px;
+    color: #ff9800;
+    font-weight: bold;
+}
+
+/* 🔹 Review Comment */
+.review-comment {
+    font-size: 16px;
+    color: #444;
+    font-style: italic;
+    background-color: #ffffff;
+    padding: 10px;
+    border-left: 4px solid #0056b3; /* Adds a colored bar for emphasis */
+    margin: 10px 0;
+    text-align: justify;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Review Author */
+.review-author {
+    font-size: 14px;
+    color: #777;
+    font-style: italic;
+}
+
+/* 🔹 Responsive Design */
+@media screen and (max-width: 768px) {
+    .review-container {
+        margin-top: 170px; /* More space for a larger navbar */
+    }
+
+    .review-item {
+        padding: 15px;
+    }
+
+    .review-content, .review-comment {
+        font-size: 14px;
+    }
+
+    .review-date {
+        font-size: 16px;
+    }
+
+    .review-rating {
+        font-size: 14px;
+    }
+}
+/* 🔹 View Review Page - Scoped Styling */
+.view-review-container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 🔹 Title Styling */
+.view-review-container h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 🔹 Review Details */
+.view-review-details {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.view-review-details p {
+    margin: 10px 0;
+}
+
+.view-review-comment {
+    font-style: italic;
+    color: #444;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-left: 5px solid #007bff;
+}
+
+/* 🔹 Loading & Error Messages */
+.view-review-loading {
+    font-size: 18px;
+    color: #007bff;
+}
+
+.view-review-error {
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+}
+
+/* 🔹 Back Button */
+.view-review-back-btn {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border:solid;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.view-review-back-btn:hover {
+    background: #0056b3;
+}
+
+/* 🔹 Responsive Design */
+@media screen and (max-width: 768px) {
+    .view-review-container {
+        width: 90%;
+        margin-top: 120px;
+    }
+
+    .view-review-container h2 {
+        font-size: 22px;
+    }
+
+    .view-review-details {
+        font-size: 16px;
+    }
+
+    .view-review-back-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+/* ======================================== */
+/* ✅ Common Review Page Styling (No Conflicts) */
+/* ======================================== */
+
+/* 🎨 Review Form Styling */
+.review-form-container {
+    max-width: 500px;
+    margin: 120px auto 40px; /* Adjusts for navbar */
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: "Arial", sans-serif;
+}
+
+/* 📝 Form Heading */
+.review-form-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* 🚨 Error Message */
+.review-form-container .error-message {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* 🔹 Form Fields */
+.review-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.review-form-container input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* ✅ Submit & Back Buttons */
+.review-form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.review-form-container button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+}
+
+.review-form-container button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.review-form-container .back-btn {
+    background-color: #6c757d;
+    color: white;
+}
+
+.review-form-container .back-btn:hover {
+    background-color: #545b62;
+}
+
+/* 📱 Responsive Design */
+@media screen and (max-width: 600px) {
+    .review-form-container {
+        width: 90%;
+        margin-top: 140px; /* Adjusted for mobile */
+    }
+
+    .review-form-container input {
+        font-size: 14px;
+    }
+
+    .review-form-container button {
+        font-size: 14px;
+    }
+}
+/* ======================================== */
+/* ✅ Common Review Page Styling (No Conflicts) */
+/* ======================================== */
+
+/* 🎨 Review Form Styling */
+.review-form-container {
+    max-width: 500px;
+    margin: 120px auto 40px; /* Adjusts for navbar */
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: "Arial", sans-serif;
+}
+
+/* 📝 Form Heading */
+.review-form-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* 🚨 Error Message */
+.review-form-container .error-message {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* 🔹 Form Fields */
+.review-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.review-form-container input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* ✅ Submit & Back Buttons */
+.review-form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.review-form-container button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+}
+
+.review-form-container button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.review-form-container .back-btn {
+    background-color: #6c757d;
+    color: white;
+}
+
+.review-form-container .back-btn:hover {
+    background-color: #545b62;
+}
+
+/* 📱 Responsive Design */
+@media screen and (max-width: 600px) {
+    .review-form-container {
+        width: 90%;
+        margin-top: 140px; /* Adjusted for mobile */
+    }
+
+    .review-form-container input {
+        font-size: 14px;
+    }
+
+    .review-form-container button {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,33 @@
+/* Home Page background image */
+.home {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-top: 0;
+  background-size: cover; /* Ensures the image covers the whole container */
+  background-position: center; /* Centers the image */
+  background-attachment: flex; /* Keeps the background fixed during scrolling */
+  height: 100vh; /* Makes the home page fill the entire screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Change text color to white for contrast */
+  transition: background-image 1s ease-in-out;
+  
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  color: azure;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}

@@ -1,0 +1,227 @@
+/* About Us Page Styling */
+.about-container {
+  font-family: "Arial", sans-serif;
+  color: #000000;
+}
+
+/* Hero Section */
+.about-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px 10%;
+  background: #f8f9fa;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-content {
+  max-width: 50%;
+}
+
+.about-content h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  color: #fff;
+  background: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+/* About Company */
+.about-company {
+  text-align: center;
+  padding: 50px 10%;
+}
+
+.about-company h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.about-company p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Testimonials */
+.testimonials {
+  text-align: center;
+  padding: 50px 10%;
+  background: #f1f1f1;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  max-width: 300px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-card img {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* Meet Our Team */
+.team-section {
+  text-align: center;
+  padding: 50px 10%;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  max-width: 300px;
+  text-align: center;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-card:hover {
+  transform: scale(1.05);
+}
+
+.team-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icons svg {
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons svg:hover {
+  transform: scale(1.1);
+}
+
+/* Social Media Icon Colors */
+.facebook-icon {
+  color: #1877f2;
+}
+
+.instagram-icon {
+  color: #e1306c;
+}
+
+.linkedin-icon {
+  color: #0077b5;
+}
+
+.youtube-icon {
+  color: #ff0000;
+}
+
+/* Back to Home Button */
+.back-home-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.btn-secondary {
+  background: #6c757d;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-secondary:hover {
+  background: #5a6268;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateX(-30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}

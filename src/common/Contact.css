@@ -1,0 +1,217 @@
+/* General Styling */
+.contact-container {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  text-align: center;
+  padding: 50px 10%;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Hero Section */
+.contact-hero {
+  background: #007bff;
+  color: white;
+  padding: 50px;
+  border-radius: 10px;
+  animation: slideDown 1s ease-in-out;
+}
+
+.contact-hero h1 {
+  font-size: 2.5rem;
+}
+
+.contact-hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Contact Information */
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.info-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+  min-width: 250px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon Colors */
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.location-icon {
+  color: #ff5733; /* Orange */
+}
+
+.phone-icon {
+  color: #28a745; /* Green */
+}
+
+.email-icon {
+  color: #dc3545; /* Red */
+}
+
+/* Contact Form */
+.contact-form-section {
+  background: #f1f1f1;
+  padding: 50px;
+  border-radius: 10px;
+  margin: 40px 0;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.contact-form-section h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border 0.3s ease-in-out;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.contact-form button {
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Social Media */
+.social-media {
+  margin: 40px 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  font-size: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+/* Social Media Icon Colors */
+.facebook {
+  color: #1877f2; /* Facebook Blue */
+}
+
+.instagram {
+  color: #e1306c; /* Instagram Pink */
+}
+
+.linkedin {
+  color: #0077b5; /* LinkedIn Blue */
+}
+
+.youtube {
+  color: #ff0000; /* YouTube Red */
+}
+
+/* Back to Home Button */
+.back-home-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.btn-secondary {
+  background: #6c757d;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-secondary:hover {
+  background: #5a6268;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-info {
+      flex-direction: column;
+      align-items: center;
+  }
+  .info-card {
+      width: 80%;
+      margin-bottom: 20px;
+  }
+}

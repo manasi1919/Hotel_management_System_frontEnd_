@@ -1,0 +1,97 @@
+/* RoomForm.css */
+
+/* Card Container */
+.room-form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Card Heading */
+  h2 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Elements */
+  label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  /* Input and Select Elements */
+  input[type="number"], select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  /* Checkbox Styling */
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .amenities-grid div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  /* Submit Button */
+  button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover Effect for Button */
+  button:hover {
+    background-color: #218838;
+  }
+  
+  /* Error Messages */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none; /* Initially hidden */
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .room-form-container {
+      margin: 20px;
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  }
+  

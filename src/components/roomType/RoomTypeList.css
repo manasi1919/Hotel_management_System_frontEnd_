@@ -1,0 +1,139 @@
+/* RoomTypeList.css */
+
+/* Loading style */
+.loading {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+  }
+  
+  /* Container for the room types list */
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Title style */
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  /* Search bar style */
+  .search-bar {
+    width: 300px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  /* Scrollable container for the cards */
+  .scrollable-container {
+    max-height: 600px;
+    overflow-y: auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 12px;
+  }
+  
+  /* Card container */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Individual card style */
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    width: 300px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Image style for room type */
+  .image {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  /* Title for room type in card */
+  .card-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  
+  /* Button container in the card */
+  .button-container {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Button style */
+  .button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: 42px;
+    height: 42px;
+  }
+  
+  /* Button group at the bottom */
+  .button-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Wide button style */
+  .wide-button {
+    padding: 14px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 600;
+  }
+  
+  /* Specific button colors */
+  .button-blue {
+    background-color: #007bff;
+  }
+  
+  .button-green {
+    background-color: #28a745;
+  }
+  
+  .button-red {
+    background-color: #dc3545;
+  }
+  
+  .button-grey {
+    background-color: #6c757d;
+  }
+  
